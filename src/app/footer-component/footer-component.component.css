@@ -1,0 +1,21 @@
+#footer {
+  background-color: #333;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flex-item {
+
+}
+
+.flex-item ul {
+  list-style-type: none;
+}
