@@ -1,21 +1,11 @@
 #footer {
   background-color: #333;
   padding: 15px;
-  position: fixed;
+  margin-top: 20px;
+  position: relative;
   bottom: 0;
   width: 100%;
+  color:white;
+  box-shadow: 0 -2px 10px 4px gray;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.flex-item {
-
-}
-
-.flex-item ul {
-  list-style-type: none;
-}

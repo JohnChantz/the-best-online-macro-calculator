@@ -1,8 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~font-awesome/css/font-awesome.css";
+@import "~font-awesome/css/font-awesome.min.css";
+@import "~bulma/css/bulma.min.css";
 
 body {
-  font-family: "Comic Sans MS";
-  background-color: lightgray;
-  margin: 0;
+  background-image: url("https://www.123rf.com/photo_38604915_stock-vector-conceptual-health-or-diet-or-nutrition-word-cloud-concept-isolated-on-background.html");
 }

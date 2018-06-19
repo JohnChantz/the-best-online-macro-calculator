@@ -1,4 +1,84 @@
-<h1>TDEE Calculator</h1>
-<p>
-  tdee-calculator works!
-</p>
+<section class="hero">
+  <div class="hero-body">
+    <h1 class="title">TDEE Calculator</h1>
+    <h2 class="subtitle">While the original paper does not attempt to translate BMR into total energy expenditure
+      (TEE),
+      a BMR result may be multiplied by a factor that approximates an individual's physical activity level (PAL) to
+      estimate their TEE. The following table enables approximation of an individual's daily TEE based on some example
+      lifestyles.</h2>
+  </div>
+</section>
+<div class="container">
+<div class="columns">
+    <div class="column is-2 ">
+      <form>
+        <div class="field">
+          <label class="label">Units</label>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="question">
+              Metric
+            </label>
+            <label class="radio">
+              <input type="radio" name="question">
+              Imperial
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Weight</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter your weight">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Height</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter your height">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Age</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter your age">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Physical activity level</label>
+          <div class="control">
+            <div class="select">
+              <select>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+                <option>Very High</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link">Calculate</button>
+          </div>
+          <div class="control">
+            <button class="button is-text">Clear</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <div class="column is-6">
+      <section class="hero">
+        <div class="hero-body">
+          <h1 class="title">Results</h1>
+          <h2 class="subtitle">Your calories</h2>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

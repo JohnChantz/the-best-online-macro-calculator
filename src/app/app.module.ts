@@ -7,19 +7,15 @@ import {AppComponent} from './app.component';
 import {NavigationComponent} from './navigation/navigation.component';
 import {BmrCalculatorComponent} from './bmr-calculator/bmr-calculator.component';
 import {TdeeCalculatorComponent} from './tdee-calculator/tdee-calculator.component';
-import { FooterComponentComponent } from './footer-component/footer-component.component';
-import { MacrosCalculatorComponent } from './macros-calculator/macros-calculator.component';
-import { IifymCalculatorComponent } from './iifym-calculator/iifym-calculator.component';
+import {FooterComponentComponent} from './footer-component/footer-component.component';
+import {MacrosCalculatorComponent} from './macros-calculator/macros-calculator.component';
+import {IifymCalculatorComponent} from './iifym-calculator/iifym-calculator.component';
+import {TiledCalculatorsComponent} from './tiled-calculators/tiled-calculators.component';
+import {HighlightCalculatorDirective} from './highlight-calculator.directive';
+import {HomeComponent} from './home/home.component';
+import { AppRoutingModule } from './/app-routing.module';
+import {FormsModule} from '@angular/forms';
 
-
-const appRoutes: Routes = [
-  {path: 'bmr-calculator', component: BmrCalculatorComponent},
-  {path: 'tdee-calculator', component: TdeeCalculatorComponent},
-  {path: 'macros-calculator', component: MacrosCalculatorComponent},
-  {path: 'iifym-calculator', component: IifymCalculatorComponent}
-
-
-];
 
 @NgModule({
   declarations: [
@@ -29,14 +25,15 @@ const appRoutes: Routes = [
     TdeeCalculatorComponent,
     FooterComponentComponent,
     MacrosCalculatorComponent,
-    IifymCalculatorComponent
+    IifymCalculatorComponent,
+    TiledCalculatorsComponent,
+    HighlightCalculatorDirective,
+    HomeComponent
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      {enableTracing: true}
-    ),
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

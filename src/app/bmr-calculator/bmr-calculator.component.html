@@ -1,4 +1,63 @@
-<h1>BMR Calculator</h1>
-<p>
-  bmr-calculator works!
-</p>
+<div class="calculator">
+  <section class="hero">
+    <div class="hero-body">
+      <h1 class="title">BMR Calculator</h1>
+      <h2 class="subtitle">The Harris–Benedict equation (also called the Harris-Benedict principle) is a method used to
+        estimate an individual's basal metabolic rate (BMR).
+        The estimated BMR value may be multiplied by a number that corresponds to the individual's activity level; the
+        resulting number is the approximate daily kilocalorie intake to maintain current body weight.
+        The Harris–Benedict equation may be used to assist weight loss — by reducing kilocalorie intake number below the
+        estimated maintenance intake of the equation.</h2>
+    </div>
+  </section>
+  <div class="container">
+    <div class="column is-2 ">
+      <form>
+        <div class="field">
+          <label class="label">Units</label>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="question">
+              Metric
+            </label>
+            <label class="radio">
+              <input type="radio" name="question">
+              Imperial
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Weight</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter your weight">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Height</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter your height">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Age</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter your age">
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link">Calculate</button>
+          </div>
+          <div class="control">
+            <button class="button is-text">Clear</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
